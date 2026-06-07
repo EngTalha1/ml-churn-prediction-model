@@ -1,104 +1,77 @@
-# Customer Churn Prediction Using Machine Learning
+# Customer Churn Prediction using Machine Learning
 
-## Project Overview
-
-Customer churn is a major challenge for subscription-based businesses. Predicting customer churn allows companies to identify customers who are likely to leave and take proactive actions to retain them.
-
-This project uses machine learning techniques to predict customer churn based on customer demographics, service subscriptions, contract details, and billing information.
+## 🧠 Project Overview
+This project predicts whether a customer will churn based on service usage, billing, and contract information using machine learning models. The best-performing model is selected using GridSearchCV and evaluated using accuracy.
 
 ---
 
-## Dataset
-
-The dataset contains customer-related information including:
-
-* Demographic information
-* Service subscription details
-* Contract information
-* Billing and payment details
-
-Target Variable:
-
-* Churn = 1 → Customer Left
-* Churn = 0 → Customer Stayed
+## ⚙️ Tech Stack
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib
+- Streamlit
+- Joblib
 
 ---
 
-## Data Preprocessing
-
-The following preprocessing steps were performed:
-
-* Missing value handling
-* One-Hot Encoding of categorical variables
-* Train-Test Split
-* Data Cleaning and Type Conversion
+## 📊 Problem Statement
+Customer churn occurs when customers stop using a service. The goal is to predict churn using customer demographics, service subscriptions, and billing information.
 
 ---
 
-## Machine Learning Models Used
-
-The following models were trained and compared:
-
-1. K-Nearest Neighbors (KNN)
-2. Decision Tree Classifier
-3. Random Forest Classifier
-
-Hyperparameter tuning was performed using GridSearchCV with Stratified Cross Validation.
-
----
-
-## Results
-
-Best Performing Model:
-
-* Random Forest Classifier
-
-Best Parameters:
-
-* max_depth = 5
-* n_estimators = 50
-
-Test Accuracy:
-
-* 79.33%
+## 📁 Project Workflow
+- Data Cleaning
+- Feature Engineering
+- One-Hot Encoding
+- Train-Test Split
+- Model Training
+- Hyperparameter Tuning (GridSearchCV)
+- Model Evaluation
+- Deployment using Streamlit
 
 ---
 
-## Visualizations
-
-The project includes:
-
-* Model Accuracy Comparison
-* Feature Importance Analysis
-* Confusion Matrix
+## 🤖 Models Used
+- K-Nearest Neighbors (KNN)
+- Decision Tree Classifier
+- Random Forest Classifier
 
 ---
 
-## Technologies Used
+## 🏆 Best Model
+Random Forest Classifier achieved the best performance.
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Scikit-Learn
-
----
-
-## Key Learning Outcomes
-
-* Data preprocessing
-* Feature encoding
-* Hyperparameter tuning using GridSearchCV
-* Model comparison
-* Cross-validation
-* Feature importance analysis
-* Classification model evaluation
+- Accuracy: ~0.79
+- Best Parameters:
+  - n_estimators: 50
+  - max_depth: 5
 
 ---
 
-## Future Improvements
+## 📸 Results
 
-* Additional feature engineering
-* Advanced ensemble models
-* Probability-based churn analysis
-* Deployment as a web application
+### Confusion Matrix
+![Confusion Matrix](images/confusion_matrix.png)
+
+### Model Comparison
+![Model Comparison](images/model_comparison.png)
+
+### Streamlit App
+![Streamlit App](images/app_ui.png)
+
+## 🌐 Live Demo
+https://ml-churn-prediction-model-dlkqundzb47vca4gmgajnb.streamlit.app/
+
+---
+
+## 🚀 How to Run This Project
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+
+👨‍💻 Author
+
+Built by Talha Usmani
