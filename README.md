@@ -71,7 +71,8 @@ https://ml-churn-prediction-model-dlkqundzb47vca4gmgajnb.streamlit.app/
 ```bash
 pip install -r requirements.txt
 streamlit run app.py
+```
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Built by Talha Usmani
